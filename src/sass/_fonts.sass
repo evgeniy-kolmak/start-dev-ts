@@ -1,0 +1,19 @@
+@mixin fonts
+  font-display: swap
+  font-family: $font
+  font-style: normal
+
+@font-face
+  src: url('.././fonts/Roboto-Light.woff') format('woff'), url('.././fonts/Roboto-Light.woff2') format('woff2')
+  font-weight: 300
+  @include fonts
+
+@font-face
+  src: url('.././fonts/Roboto-Regular.woff') format('woff'), url('.././fonts/Roboto-Regular.woff2') format('woff2')
+  font-weight: 500
+  @include fonts
+
+@font-face
+  src: url('.././fonts/Roboto-Bold.woff') format('woff'), url('.././fonts/Roboto-Bold.woff2') format('woff2')
+  font-weight: 700
+  @include fonts
