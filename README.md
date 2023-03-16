@@ -88,4 +88,4 @@ npm run clear
 
 ## License
 
-Project **Pincow** is distributed under the MIT license.
+Project **Start Dev TS** is distributed under the MIT license.
