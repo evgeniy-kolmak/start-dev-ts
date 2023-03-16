@@ -5,7 +5,9 @@
 
   body
     font-family: $font
+
     /* ... */
+
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)
     height: 100vh
     overflow: hidden
@@ -24,9 +26,9 @@
     text-decoration: none
     color: inherit
 
-/*  DEFAULT STYLES HOME PAGE */
+/*  DEFAULT STYLES HOMEPAGE */
 
-.home-page
+.homepage
   position: absolute,
   top: 50%,
   left: 50%,
@@ -38,14 +40,27 @@
     margin-bottom: 1.25rem
     filter: drop-shadow(-10px 5px 5px rgba(56, 56, 56, 0.45 ))
   &-title
-    color: $primary
+    text-transform: uppercase
+    font-weight: 500
     margin-bottom: 0.65rem
+    letter-spacing: 0.2rem
+    background: linear-gradient(white, #38495a)
+    background-clip: text
+    color: transparent
   &-link
+    display: flex
+    justify-content: center
     color: $secondary
     text-decoration: underline
-    font-size: 1.15rem
-
-/*  ANAMATION BACKGROUND */    
+    font-size: 1.16rem
+  &-icon
+    margin-right: 0.2rem
+    width: 24px
+    height: 24px
+    transition: all .4s ease 0s
+    &:hover
+      transition: all .4s ease 0s
+      transform: translateY(-5px)
 
 @function multiple-box-shadow ($n)
   $value: '#{random(2000)}px #{random(2000)}px #FFF'

@@ -1,11 +1,14 @@
 {
   "name": "start-dev-ts",
-  "version": "0.2.0",
-  "description": "",
+  "version": "0.1.0",
+  "bin": {
+    "start-dev-ts": "start-dev-ts.js"
+  },
+  "description": "Starter template for developing single-page and multi-page sites",
   "main": "index.ts",
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve",
-    "build:ev": "set NODE_ENV=development&&webpack",
+    "build:dev": "set NODE_ENV=development&&webpack",
     "build:prod": "set NODE_ENV=production&&webpack",
     "clear": "rd /s /q dist"
   },
@@ -15,7 +18,7 @@
   },
   "keywords": [],
   "author": "Evgeniy Kolmak",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/evgeniy-kolmak/start-dev-ts/issues"
   },
@@ -43,5 +46,8 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "start-dev-ts": "^0.1.0"
   }
 }
